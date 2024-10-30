@@ -1,4 +1,4 @@
 [build]
 command = "ng build"
 functions = "netlify/functions"
-publish = "dist/base-apparel-coming-soon-master/browser"
+publish = "dist/intro-component-with-sign-up-form/browser"
