@@ -1,13 +1,13 @@
 <section>
-    <form method="post">
-        <input type="text" placeholder="First Name" name="FirstName">
-        <span>First Name cannot be empty</span>
-        <input type="text" placeholder="Last Name" name="LastName">
-        <span>Last Name cannot be empty</span>
-        <input type="email" placeholder="Email Address" name="email">
-        <span>Looks like this is not an email</span>
-        <input type="password" placeholder="Password" name="password">
-        <span>Password cannot be empty</span>
+    <form [formGroup]="signUpForm" (ngSubmit)="handleSumbit(this.firstName,this.lastName,this.email,this.password)">
+        <input type="text" placeholder="First Name" name="firstName" (focus)="handleFocus('firstName',this.firstName,this.lastName,this.email,this.password)" formControlName="firstName">
+        <span #firstName>First Name cannot be empty</span>
+        <input type="text" placeholder="Last Name" name="lastName" (focus)="handleFocus('lastName',this.firstName,this.lastName,this.email,this.password)" formControlName="lastName">
+        <span #lastName>Last Name cannot be empty</span>
+        <input type="email" placeholder="Email Address" name="email" (focus)="handleFocus('email',this.firstName,this.lastName,this.email,this.password)" formControlName="email">
+        <span #email>Looks like this is not an email</span>
+        <input type="password" placeholder="Password" name="password" (focus)="handleFocus('password',this.firstName,this.lastName,this.email,this.password)" formControlName="password">
+        <span #password>Password cannot be empty</span>
         <button type="submit">CLAIM YOUR FREE TRIAL</button>
     </form>
     <p>
