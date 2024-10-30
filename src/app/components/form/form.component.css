@@ -28,11 +28,30 @@ section form input {
 }
 
 section form input::placeholder {
-    color: hsl(249, 10%, 26%);
+    color: hsl(246, 25%, 77%);
 }
 
 section form input:active {
     border-color: hsl(249, 10%, 26%);
+}
+
+section form span {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    width: 90%;
+    margin: 0.3rem auto 0 auto;
+    text-align: right;
+    font-size: 0.7rem;
+    display:none;
+}
+
+section form span:after {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: -2.5rem;
+    right: 1.3rem;
+    content: url("/images/icon-error.svg");
 }
 
 section form button {
@@ -73,6 +92,15 @@ section p a {
 @media (min-width:1000px) {
     section form {
         padding-top: 1rem;
+    }
+
+    section form span {
+        font-size: 0.8725rem;
+    }
+
+    section form span:before {
+        width: 2rem;
+        height: 2rem;
     }
 
     section form button {
