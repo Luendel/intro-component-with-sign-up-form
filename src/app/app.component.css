@@ -25,3 +25,10 @@ main {
         grid-row: span 2;
     }
 }
+
+@media (min-width:1500px) {
+    main {
+        padding-left: 12.25vw;
+        padding-right: 12.25vw;
+    }
+}

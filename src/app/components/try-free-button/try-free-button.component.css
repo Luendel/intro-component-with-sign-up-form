@@ -17,11 +17,6 @@ section button {
     box-shadow: 0 0.5rem rgba(0, 0, 0, 0.123);
 }
 
-section button:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
 section button span {
     font-weight: 700;
 }

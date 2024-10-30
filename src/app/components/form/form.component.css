@@ -74,6 +74,10 @@ section form button:hover {
     cursor: pointer;
 }
 
+section form button:active {
+    opacity: 70%;
+}
+
 section p {
     width: 85.87%;
     margin: 1rem auto;
